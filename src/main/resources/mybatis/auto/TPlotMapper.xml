@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fc.v2.mapper.auto.TPlotMapper">
+    
+    <resultMap type="com.fc.v2.model.auto.TPlot" id="TPlotResult">
+        <result property="id"    column="id"    />
+        <result property="code"    column="code"    />
+        <result property="name"    column="name"    />
+        <result property="areaCode"    column="area_code"    />
+        <result property="areaSize"    column="area_size"    />
+        <result property="cropType"    column="crop_type"    />
+        <result property="responsible"    column="responsible"    />
+        <result property="delFlag"    column="del_flag"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+    <sql id="selectTPlotVo">
+        select id, code, name, area_code, area_size, crop_type, responsible, del_flag, create_by, create_time, update_by, update_time, remark from t_irri_plot
+    </sql>
+
+</mapper>
